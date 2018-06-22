@@ -8,7 +8,7 @@ type t('env) = {
   "expoRuntimeVersion": string,
   "expoVersion": string,
   [@bs.meth] "getWebViewUserAgentAsync": unit => Js.Promise.t(string),
-  "isDevice": Js.boolean,
+  "isDevice": bool,
   "linkingUri": string,
   "linkingUrl": string,
   "manifest": {
@@ -19,15 +19,15 @@ type t('env) = {
     "developer": {
       .
       "projectRoot": string,
-      "tool": string
+      "tool": string,
     },
     "env": Js.t({..} as 'env),
     "icon": string,
     "iconUrl": string,
     "id": string,
-    "isVerified": Js.boolean,
-    "logUrl": string
-  }
+    "isVerified": bool,
+    "logUrl": string,
+  },
 };
 
 [@bs.val] [@bs.module "expo"] external constants : t('env) = "Constants";
