@@ -8,7 +8,13 @@
     "install-peers": "install-self-peers -- --ignore-scripts"
   },
   "license": "MIT",
-  "keywords": ["reason", "reasonml", "bucklescript", "react-native", "expo"],
+  "keywords": [
+    "reason",
+    "reasonml",
+    "bucklescript",
+    "react-native",
+    "expo"
+  ],
   "author": "",
   "repository": {
     "type": "git",
@@ -16,7 +22,7 @@
   },
   "devDependencies": {
     "@team-griffin/install-self-peers": "^1.1.1",
-    "bs-platform": "^2.2.2"
+    "bs-platform": "^3.1.5"
   },
   "peerDependencies": {
     "bs-react-native": "^0.5.0",
