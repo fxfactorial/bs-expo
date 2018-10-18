@@ -8,7 +8,13 @@
     "install-peers": "install-self-peers -- --ignore-scripts"
   },
   "license": "MIT",
-  "keywords": ["reason", "reasonml", "bucklescript", "react-native", "expo"],
+  "keywords": [
+    "reason",
+    "reasonml",
+    "bucklescript",
+    "react-native",
+    "expo"
+  ],
   "author": "",
   "repository": {
     "type": "git",
