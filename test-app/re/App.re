@@ -39,6 +39,20 @@ Js.Promise.(
   |> then_(fileInfo => Js.log(fileInfo) |> resolve)
 );
 
+[@bs.module "./data/videos/awesome_video0.mp4"]
+external vid0 : string = "default";
+
+let resizeMode = BsExpo.Video.CONTAIN;
+
+let video =
+  <BsExpo.Video
+    source=vid0
+    resizeMode
+    style=(
+      Some(Style.(style([display(Flex), backgroundColor("#ffffff")])))
+    )
+  />;
+
 /* BsExpo.FileSystem.getInfo(BsExpo.FileSystem.documentDirectory) */
 /* |> Js.Promise.then_(result => Js.log(result) |> Js.Promise.resolve); */
 /* |> Js.Promise.then_(() => Js.Promise.resolve()) */
@@ -52,6 +66,7 @@ let make = _children => {
       style=Style.(
               style([flex(1.), justifyContent(Center), alignItems(Center)])
             )>
+      video
       <Text value="Reason is awesome!" />
     </View>,
 };

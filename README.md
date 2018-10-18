@@ -80,7 +80,7 @@ There are some components and APIs missing. You can find an overview of the impl
 
 ## Helping out
 
-Lots of easy to finish tasks, just do `yarn install-peers && yarn start` and you'll see all
+Lots of easy to finish tasks, just do `yarn install && yarn install-peers && yarn start` and you'll see all
 the compiler errors to fix.
 
 ## Loading Fonts

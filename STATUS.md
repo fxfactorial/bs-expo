@@ -55,5 +55,5 @@
 * [ ] Svg
 * [ ] takeSnapshotAsync
 * [ ] Util
-* [ ] Video
+* [x] Video
 * [ ] WebBrowser
