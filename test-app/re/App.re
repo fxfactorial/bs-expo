@@ -67,7 +67,6 @@ let make = _children => {
       style=Style.(
               style([flex(1.), justifyContent(Center), alignItems(Center)])
             )>
-      video
       <Text value="Reason is awesome!" />
     </View>,
 };
