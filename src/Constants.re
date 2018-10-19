@@ -19,15 +19,15 @@ type t('env) = {
     "developer": {
       .
       "projectRoot": string,
-      "tool": string
+      "tool": string,
     },
     "env": Js.t({..} as 'env),
     "icon": string,
     "iconUrl": string,
     "id": string,
-    "isVerified": Js.boolean,
-    "logUrl": string
-  }
+    "isVerified": bool,
+    "logUrl": string,
+  },
 };
 
 [@bs.val] [@bs.module "expo"] external constants : t('env) = "Constants";

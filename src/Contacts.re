@@ -22,7 +22,7 @@ type contacts_pagination_result = {
     "previousLastName": Js.Undefined.t(string),
   },
   "hasNextPage": Js.boolean,
-  "hasPreviousPage": Js.boolean,
+  "hasPreviousPage": bool,
   "total": int,
 };
 

@@ -32,8 +32,7 @@ type audioMode = {
 };
 
 [@bs.module "expo"] [@bs.scope "Audio"] [@bs.val]
-external setAudioModeAsync : Js.boolean => Js.Promise.t(unit) =
-  "setAudioModeAsync";
+external setAudioModeAsync : bool => Js.Promise.t(unit) = "setAudioModeAsync";
 /*
  type sound = {
    .
