@@ -17,7 +17,7 @@ type fileInfo = {
 type options = {
   .
   "md5": Js.Undefined.t(Js.boolean),
-  "size": Js.Undefined.t(Js.boolean),
+  "size": Js.Undefined.t(bool),
 };
 
 [@bs.module "expo"] [@bs.scope "FileSystem"]

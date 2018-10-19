@@ -4,22 +4,22 @@ type image_t = {
   .
   "uri": string,
   "width": int,
-  "height": int
+  "height": int,
 };
 
 type image_library_opts = {
   .
-  "allowsEditing": Js.undefined(Js.boolean),
+  "allowsEditing": Js.undefined(bool),
   "aspect": Js.undefined((int, int)),
   "quality": Js.undefined(int),
-  "mediaTypes": Js.undefined(media_t)
+  "mediaTypes": Js.undefined(media_t),
 };
 
 type camera_opts = {
   .
-  "allowsEditing": Js.undefined(Js.boolean),
+  "allowsEditing": Js.undefined(bool),
   "aspect": Js.undefined((int, int)),
-  "quality": Js.undefined(int)
+  "quality": Js.undefined(int),
 };
 /* type image_result = { */
 /*   . */

@@ -11,7 +11,7 @@ external authenticateAsync :
   Js.nullable(string) =>
   {
     .
-    success: Js.boolean,
+    success: bool,
     error: Js.nullable(string),
   } =
   "authenticateAsync";
